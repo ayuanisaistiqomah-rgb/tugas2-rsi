@@ -20,6 +20,12 @@ const doc = {
     MenuItemUpdate: {
       price: 16000,
     },
+    UserInput: {
+      $name: 'Sausan Nisa',
+      $email: 'sausan@student.test',
+      $password: 'rahasia123',
+      role: 'customer',
+    },
   },
 };
 
