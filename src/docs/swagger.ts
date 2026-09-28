@@ -26,6 +26,12 @@ const doc = {
       $password: 'rahasia123',
       role: 'customer',
     },
+    ReviewInput: {
+      $stallId: 4,
+      $userId: 12,
+      $rating: 5,
+      comment: 'Mie ayamnya enak, porsinya pas',
+    },
   },
 };
 
