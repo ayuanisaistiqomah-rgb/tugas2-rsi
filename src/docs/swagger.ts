@@ -36,6 +36,9 @@ const doc = {
       $reviewId: 1,
       $userId: 13,
     },
+    FlagStatusUpdate: {
+      $status: 'resolved',
+    },
   },
 };
 
