@@ -39,6 +39,13 @@ const doc = {
     FlagStatusUpdate: {
       $status: 'resolved',
     },
+    AuditLogInput: {
+      $userId: 1,
+      $action: 'UPDATE',
+      $targetTable: 'FLAGS',
+      $targetId: 1,
+      metadata: { status: 'resolved' },
+    },
   },
 };
 

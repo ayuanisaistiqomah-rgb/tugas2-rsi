@@ -9,6 +9,7 @@ import { userRouter } from './routes/userRouter.ts';
 import { reviewRouter } from './routes/reviewRouter.ts';
 import { likeRouter } from './routes/likeRouter.ts'; 
 import { flagRouter } from './routes/flagRouter.ts';
+import { auditLogRouter } from './routes/auditLogRouter.ts';
 
 const app: Application = express();
 const PORT: number = 3000;
@@ -38,6 +39,7 @@ app.use('/api/v1/users', userRouter);
 app.use('/api/v1/reviews', reviewRouter);
 app.use('/api/v1/likes', likeRouter);
 app.use('/api/v1/flags', flagRouter);
+app.use('/api/v1/audit-logs', auditLogRouter);
 
 app.listen(PORT, () => {
   console.log(`Server berjalan di http://localhost:${PORT}`);
