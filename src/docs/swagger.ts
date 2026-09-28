@@ -32,6 +32,10 @@ const doc = {
       $rating: 5,
       comment: 'Mie ayamnya enak, porsinya pas',
     },
+    LikeInput: {
+      $reviewId: 1,
+      $userId: 13,
+    },
   },
 };
 
