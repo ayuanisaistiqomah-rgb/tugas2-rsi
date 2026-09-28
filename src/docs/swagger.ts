@@ -5,15 +5,20 @@ const doc = {
   servers: [{ url: 'http://localhost:3000' }],
   definitions: {
     StallInput: {
-      type: 'object',
-      required: ['ownerId', 'name'],
-      properties: {
-        ownerId: { type: 'integer', example: 2 },
-        name: { type: 'string', example: 'Warung Baru' },
-        category: { type: 'string', example: 'Nasi' },
-        location: { type: 'string', example: 'Kantin FK' },
-        description: { type: 'string' },
-      },
+      $ownerId: 2,
+      $name: 'Warung Baru',
+      category: 'Nasi',
+      location: 'Kantin FK',
+      description: '',
+    },
+    MenuItemInput: {
+      $stallId: 5,
+      $name: 'Es Jeruk Peras',
+      $price: 6000,
+      isAvailable: true,
+    },
+    MenuItemUpdate: {
+      price: 16000,
     },
   },
 };
